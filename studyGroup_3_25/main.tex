@@ -1,0 +1,290 @@
+\documentclass[oneside]{book}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{environ}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems,skins,breakable}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=5.5in,
+    top=1in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% Variables
+\def\notetitle{MATH 165\\ Linear Algebra\\ Midterm II Review Note}
+\def\noteauthor{
+    \textbf{Professor Madhu} \\ 
+    {\LaTeX} by Ethan\\
+    University of Rochester}
+\def\notedate{Spring 2024}
+
+% The theorem system and user-defined commands
+\input{theorems.tex}
+\input{commands.tex}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+\title{\textbf{
+    \LARGE{\notetitle} \vspace*{10\baselineskip}}
+    }
+\author{\noteauthor}
+\date{\notedate}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+% ------------------------------------------------------------------------------
+
+% \chapter{Examples}
+
+% \section{Theorem System}
+
+% \defn{Definition Name}{
+%     A defintion.
+% }
+
+% \thmr{Theorem Name}{mybigthm}{
+%     A theorem.
+% }
+
+% \lem{Lemma Name}{
+%     A lemma.
+% }
+
+% \fact{
+%     A fact.
+% }
+
+% \cor{
+%     A corollary.
+% }
+
+% \prop{
+%     A proposition.
+% }
+
+% \clmp{}{
+%     A claim.
+% }{
+%     A reference to Theorem~\ref{thm:mybigthm}
+% }
+
+% \pf{
+%     Veniam velit incididunt deserunt est proident consectetur non velit ipsum voluptate nulla quis. Ea ullamco consequat non ad amet cupidatat cupidatat aliquip tempor sint ea nisi elit dolore dolore. 
+
+%     Laboris labore magna dolore eiusmod ea ex et eiusmod laboris. Et aliquip cupidatat reprehenderit id officia pariatur. 
+% }
+
+% \ex{
+%     Nostrud esse occaecat Lorem dolore laborum exercitation adipisicing eu sint sunt et. Excepteur voluptate consectetur qui ex amet esse sunt ut nostrud qui proident non. Ipsum nostrud ut elit dolor. Incididunt voluptate esse et est labore cillum proident duis.
+% }
+
+% \rmk{
+%     Some remark.
+% }
+
+% \rmkb{
+%     Some more remark.
+% }
+
+% \section{Pictures}
+
+% \begin{figure}[H]
+%     \center
+%     \includegraphics[scale=0.1]{img/loo.jpg}
+%     \caption{Waterloo, ON}
+% \end{figure}
+
+% ------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% \chapter{Mar.25 Study session}
+
+% \section{Null space and rank nullity theorem}
+
+% \defn{Null space}{
+%     The null space of a matrix $A$ is the set of all solutions to the homogeneous equation $Ax = 0$.
+% }
+
+% \defn{Rank}{
+%     The rank of a matrix $A$ is the dimension of the row space of $A$.
+% }
+
+
+
+
+% \defn{dimention of the null space}{
+%     The dimension of the null space of a matrix $A$ is the number of free variables in the reduced row echelon form of $A$.
+% }
+% If you hear the word null space, assume you are working with the matrix. (Need to learn matrix representation of polynomials)
+
+
+
+
+% \[ \dim(Null) + \dim(\text{row space}) = \dim(V) \]
+% \[ \dim(Null A) + \dim(\text{row/column space})\]
+% \ex{
+%     A = $11*4$ matrix\\
+%     B = RREF Rank B = 3\\
+%     Find Nul(A)\\ \\ 
+%     Rank(A) = Rank(RREF A)\\
+% }
+
+% How to find the row space: 
+% Ax = 0 
+
+% Note that x is a vector in $\mathbb{R} ^n$\\
+
+% \[ A = \begin{bmatrix}
+%     1 & 7 & -2 & 14 & 0\\
+%     3 & 0 & 1 & -2 & 3\\
+%     6 & 7 & -1 & 0 & 4
+% \end{bmatrix} \begin{bmatrix}
+%     x_1\\ x_2\\ x_3\\ x_4
+% \end{bmatrix} = \begin{bmatrix}
+%     0\\ 0\\ 0
+% \end{bmatrix} \]
+
+% Reduce row echelon form of A:
+% \[ \begin{bmatrix}
+%     1 & 0 & 0 & -\frac{3}{7} & \frac{}{}\\
+
+% \end{bmatrix}
+% \]
+
+
+% \[\lambda_1 = \]
+
+
+
+% \section{Find row and column space}
+% Step 1: Find the RREF (A)\\
+% Step 2: Find the row and column space \\
+% for those rows that have leading 1s, the entire row as a basis for the row space.\\
+% for columns that have leading 1s, the corresponding columns in the original matrix as a basis for the column space.\\
+
+% \ex{
+%     A = $\begin{bmatrix}
+%         1 & 2 & 3\\
+%         4 & 5 & 6\\
+%         7 & 8 & 9
+%     \end{bmatrix}$\\
+%     RREF(A) = $\begin{bmatrix}
+%         1 & 0 & -1\\
+%         0 & 1 & 2\\
+%         0 & 0 & 0
+%     \end{bmatrix}$\\
+%     Row space = $\begin{bmatrix}
+%         1 & 0 & -1\\
+%         0 & 1 & 2
+%     \end{bmatrix}$\\
+%     Column space = $\begin{bmatrix}
+%         1 & 2\\
+%         4 & 5\\
+%         7 & 8
+%     \end{bmatrix}$
+% }
+% \section{Linear Transformation}
+% \defn{Linear Transformation}{
+%     A function $T: V \to W$ is a linear transformation if for all $u, v \in V$ and all scalars $c$, we have
+%     \begin{enumerate}
+%         \item $T(u + v) = T(u) + T(v)$
+%         \item $T(cu) = cT(u)$
+%     \end{enumerate}
+% }
+
+% $V$ and $W$ are vector spaces. \\
+% \ex{
+%     T(a,b,c,d) = $\begin{bmatrix}
+%         a & b \\ c & d
+%     \end{bmatrix}$ 
+%     is in $\mathbb{R} ^2$.\\
+%     $A_{m \times n}$\\
+%     row space $\in$ $\mathbb{R} ^n$\\
+%     column space $\in$ $\mathbb{R} ^m$\\
+% }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
