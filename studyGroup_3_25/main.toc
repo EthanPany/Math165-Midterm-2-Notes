@@ -1,1 +1,11 @@
 \babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Determinants}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Lecture 9: Def. of Determinants \& it's calculation}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Lecture 10: Rank, Invertibility, Elementary Row Operations \& additional properties of determinants}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Vector Spaces}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Lecture 11: Vector Spaces, Zero-Vectors, Dimentions, basis, \& Linear Combinations}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Lecture 12: Vector Subspace \& Proof}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Lecture 13: Spanning Set}{3}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Lecture 14: Spanning, Linear Independence \& Basis}{3}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Lecture 15: Linear Independence \& Basis and dimension}{3}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Lecture 16: Basis, Row and Columns Spaces}{3}{section.2.6}%
