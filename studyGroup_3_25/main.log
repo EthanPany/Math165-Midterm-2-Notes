@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2024.3.11)  27 MAR 2024 12:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2024.3.11)  27 MAR 2024 14:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -666,29 +666,105 @@ l.53 \newpage
 
 ]
 Chapter 1.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 83--96
+[]$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--96
+
+ []
+
 [2
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 96--97
+[]$[]$
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 123--124
+[]$[]$
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 135--136
+[]$[]$
+ []
+
+[3]
+<img/Snipaste_2024-03-27_13-52-06.png, id=110, 1145.27875pt x 789.95125pt>
+File: img/Snipaste_2024-03-27_13-52-06.png Graphic file (type png)
+<use img/Snipaste_2024-03-27_13-52-06.png>
+Package pdftex.def Info: img/Snipaste_2024-03-27_13-52-06.png  used on input line 157.
+(pdftex.def)             Requested size: 114.53458pt x 78.99974pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 178--179
+[]$[]$
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 183--184
+[]$[]$
+ []
+
+[4 <./img/Snipaste_2024-03-27_13-52-06.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
+
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 275--276
+[]$[]$
+ []
+
+[5] [6]
 Chapter 2.
-[3
+[7
 
 ] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 36DB8F1BD0B83BAB9736EA1E35E3BD03;2982.
+(rerunfilecheck)             Checksum: 020413E019B32A1C0EB3E59FF0D9ECC6;3861.
  ) 
 Here is how much of TeX's memory you used:
- 26146 strings out of 477497
- 516351 string characters out of 5824788
- 1854793 words of memory out of 6000000
- 45781 multiletter control sequences out of 15000+600000
- 521669 words of font info for 68 fonts, out of 8000000 for 9000
+ 26284 strings out of 477497
+ 519204 string characters out of 5824788
+ 1871793 words of memory out of 6000000
+ 45899 multiletter control sequences out of 15000+600000
+ 522368 words of font info for 70 fonts, out of 8000000 for 9000
  370 hyphenation exceptions out of 8191
- 83i,9n,80p,655b,469s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on main.pdf (4 pages, 76050 bytes).
+ 83i,12n,80p,655b,983s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (8 pages, 256215 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 156 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
