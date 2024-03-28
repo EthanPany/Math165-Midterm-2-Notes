@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2024.3.11)  28 MAR 2024 01:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2024.3.11)  27 MAR 2024 23:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -567,24 +567,24 @@ File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count317
@@ -638,16 +638,16 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 43.
+Package hyperref Info: Link coloring OFF on input line 42.
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -661,230 +661,182 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.54 \newpage
+l.53 \newpage
               [1
 
 ]
 Chapter 1.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 91--104
+Overfull \hbox (15.0pt too wide) in paragraph at lines 90--103
 []$[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--104
+Underfull \hbox (badness 10000) in paragraph at lines 90--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--104
+Underfull \hbox (badness 10000) in paragraph at lines 90--103
 
  []
 
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 104--104
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 104--105
+Overfull \hbox (15.0pt too wide) in paragraph at lines 103--104
 []$[]$
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 131--132
+Overfull \hbox (15.0pt too wide) in paragraph at lines 130--131
 []$[]$
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 143--144
+Overfull \hbox (15.0pt too wide) in paragraph at lines 142--143
 []$[]$
  []
 
 [3]
-<img/Snipaste_2024-03-27_13-52-06.png, id=130, 1145.27875pt x 789.95125pt>
+<img/Snipaste_2024-03-27_13-52-06.png, id=43, 1145.27875pt x 789.95125pt>
 File: img/Snipaste_2024-03-27_13-52-06.png Graphic file (type png)
 <use img/Snipaste_2024-03-27_13-52-06.png>
-Package pdftex.def Info: img/Snipaste_2024-03-27_13-52-06.png  used on input line 165.
+Package pdftex.def Info: img/Snipaste_2024-03-27_13-52-06.png  used on input line 164.
 (pdftex.def)             Requested size: 114.53458pt x 78.99974pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 186--187
+Overfull \hbox (15.0pt too wide) in paragraph at lines 185--186
 []$[]$
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 191--192
+Overfull \hbox (15.0pt too wide) in paragraph at lines 190--191
 []$[]$
  []
 
 [4 <./img/Snipaste_2024-03-27_13-52-06.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 283--283
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--283
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--283
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--283
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 283--284
+Overfull \hbox (15.0pt too wide) in paragraph at lines 282--283
 []$[]$
  []
 
 [5]
-Overfull \hbox (15.0pt too wide) in paragraph at lines 356--357
+Overfull \hbox (15.0pt too wide) in paragraph at lines 355--356
 []$[]$
  []
 
 [6]
-Overfull \hbox (15.0pt too wide) in paragraph at lines 385--386
+Overfull \hbox (15.0pt too wide) in paragraph at lines 384--385
 []$[]$
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 447--447
+Underfull \hbox (badness 10000) in paragraph at lines 446--446
 
  []
 
-<img/Snipaste_2024-03-27_22-33-20.png, id=158, 755.82375pt x 597.23125pt>
+<img/Snipaste_2024-03-27_22-33-20.png, id=74, 755.82375pt x 597.23125pt>
 File: img/Snipaste_2024-03-27_22-33-20.png Graphic file (type png)
 <use img/Snipaste_2024-03-27_22-33-20.png>
-Package pdftex.def Info: img/Snipaste_2024-03-27_22-33-20.png  used on input line 451.
+Package pdftex.def Info: img/Snipaste_2024-03-27_22-33-20.png  used on input line 450.
 (pdftex.def)             Requested size: 151.16206pt x 119.44412pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 474--475
+Overfull \hbox (15.0pt too wide) in paragraph at lines 473--474
 []$[]$
  []
 
 [8 <./img/Snipaste_2024-03-27_22-33-20.png>] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 554--556
+Overfull \hbox (15.0pt too wide) in paragraph at lines 566--567
+[]$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--575
 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 569--570
+Overfull \hbox (15.0pt too wide) in paragraph at lines 572--575
 []$[]$
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
+Underfull \hbox (badness 10000) in paragraph at lines 585--585
 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 575--578
+Underfull \hbox (badness 10000) in paragraph at lines 585--585
+
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 585--586
 []$[]$
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 588--588
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 588--588
-
- []
-
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 588--589
-[]$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 610--621
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 645--646
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 647--648
-
- []
+/u/ypan36/Math165/studyGroup_3_25/main.tex:624: Missing $ inserted.
+<inserted text> 
+                $
+l.624 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 [11]
-Overfull \hbox (15.0pt too wide) in paragraph at lines 685--686
-[]$[]$
- []
-
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 698--699
-[]$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 724--724
-
- []
-
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 724--725
-[]$[]$
- []
-
-[12]
-Overfull \hbox (15.0pt too wide) in paragraph at lines 748--749
-[]$[]$
- []
-
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 791--792
-[]$[]$
- []
-
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 817--818
-[]$[]$
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 871--871
-
- []
-
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 871--872
-[]$[]$
- []
-
-[14]
 Chapter 2.
-[15
+[12
 
-] [16] [17] [18] [19] [20] (./main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 223DA3F1109F34B0541E4569A4C1454C;4740.
+] [13] [14] [15] [16] [17] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  6CF4996D25F1C8CB14220D2DD8F28841;4484.
  ) 
 Here is how much of TeX's memory you used:
- 26375 strings out of 477497
- 520964 string characters out of 5824788
- 1876793 words of memory out of 6000000
- 45953 multiletter control sequences out of 15000+600000
+ 26328 strings out of 477497
+ 520186 string characters out of 5824788
+ 1872793 words of memory out of 6000000
+ 45918 multiletter control sequences out of 15000+600000
  523062 words of font info for 72 fonts, out of 8000000 for 9000
  370 hyphenation exceptions out of 8191
- 83i,21n,80p,655b,1089s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (21 pages, 376317 bytes).
+ 83i,21n,80p,491b,1089s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (18 pages, 359931 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
- 64 named destinations out of 1000 (max. 500000)
- 167 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 215 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
