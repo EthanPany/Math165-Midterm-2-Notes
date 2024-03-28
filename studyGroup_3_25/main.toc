@@ -7,13 +7,16 @@
 \contentsline {paragraph}{2 by 2 matrix}{3}{section*.3}%
 \contentsline {paragraph}{3 by 3 matrix}{4}{section*.4}%
 \contentsline {paragraph}{Larger matrix}{4}{section*.5}%
-\contentsline {subsection}{\numberline {1.1.3}Determinat of matrix functions}{6}{subsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.1.4}geometry Application: areas and volumes}{6}{subsection.1.1.4}%
-\contentsline {section}{\numberline {1.2}Lecture 10: Rank, Invertibility, Elementary Row Operations \& additional properties of determinants}{6}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Vector Spaces}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Lecture 11: Vector Spaces, Zero-Vectors, Dimentions, basis, \& Linear Combinations}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Lecture 12: Vector Subspace \& Proof}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Lecture 13: Spanning Set}{7}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Lecture 14: Spanning, Linear Independence \& Basis}{7}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Lecture 15: Linear Independence \& Basis and dimension}{7}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Lecture 16: Basis, Row and Columns Spaces}{7}{section.2.6}%
+\contentsline {subsection}{\numberline {1.1.3}Inverse of 2 by 2 matrix}{6}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Determinat of matrix functions}{7}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Geometry Application: areas and volumes}{7}{subsection.1.1.5}%
+\contentsline {paragraph}{Areas}{7}{section*.6}%
+\contentsline {paragraph}{Volumes}{8}{section*.7}%
+\contentsline {section}{\numberline {1.2}Lecture 10: Rank, Invertibility, Elementary Row Operations \& additional properties of determinants}{10}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Vector Spaces}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Lecture 11: Vector Spaces, Zero-Vectors, Dimentions, basis, \& Linear Combinations}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Lecture 12: Vector Subspace \& Proof}{12}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Lecture 13: Spanning Set}{13}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Lecture 14: Spanning, Linear Independence \& Basis}{14}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Lecture 15: Linear Independence \& Basis and dimension}{15}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Lecture 16: Basis, Row and Columns Spaces}{16}{section.2.6}%
