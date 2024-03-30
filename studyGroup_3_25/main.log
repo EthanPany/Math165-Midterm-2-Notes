@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2024.3.11)  30 MAR 2024 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2024.3.11)  30 MAR 2024 14:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1001,12 +1001,12 @@ Overfull \hbox (44.79965pt too wide) detected at line 1167
 [23] [24] [25]
 Chapter 3.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 1226--1236
+Overfull \hbox (15.0pt too wide) in paragraph at lines 1262--1272
 []$[]$
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 1236--1237
+Overfull \hbox (15.0pt too wide) in paragraph at lines 1272--1273
 []$[]$
  []
 

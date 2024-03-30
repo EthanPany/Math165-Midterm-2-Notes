@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1711824530.14773 "/u/ypan36/Math165/studyGroup_3_25/main.tex" "main.pdf" "main" 1711824533.43917 0
-  "/u/ypan36/Math165/studyGroup_3_25/main.tex" 1711824529.87143 37358 3ed7c86059a227da74a58125e72e6f0f ""
+["pdflatex"] 1711824615.68194 "/u/ypan36/Math165/studyGroup_3_25/main.tex" "main.pdf" "main" 1711824618.68973 0
+  "/u/ypan36/Math165/studyGroup_3_25/main.tex" 1711824615.41079 37354 0a37614c3c5f4b42e971ede4af648124 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -201,9 +201,9 @@
   "commands.tex" 1711395272.63752 39 4441177d9bb7b869a8d1fec2256bd52e ""
   "img/Snipaste_2024-03-27_13-52-06.png" 1711561983.69308 175887 d983d70edcd43fa1482059aed3867a99 ""
   "img/Snipaste_2024-03-27_22-33-20.png" 1711593210.09974 101380 4c5921088d91ed9f942f3a3c8c91926d ""
-  "main.aux" 1711824533.25344 6296 b8a580a3af5b941cdc6584e41735f7aa "pdflatex"
-  "main.out" 1711824533.25644 6409 2f783b4700e52de7ed5f9742e16e79a0 "pdflatex"
-  "main.toc" 1711824533.25844 3460 facc5a7ad4a77c1ea2039525bca052c6 "pdflatex"
+  "main.aux" 1711824618.50181 6296 b8a580a3af5b941cdc6584e41735f7aa "pdflatex"
+  "main.out" 1711824618.50481 6409 2f783b4700e52de7ed5f9742e16e79a0 "pdflatex"
+  "main.toc" 1711824618.50681 3460 facc5a7ad4a77c1ea2039525bca052c6 "pdflatex"
   "theorems.tex" 1711395272.51352 6337 a1c81daa226fe1f11567dbeb9bb5f3b7 ""
   (generated)
   "main.aux"
