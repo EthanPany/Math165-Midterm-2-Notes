@@ -213,7 +213,7 @@ Another more common way to find the determinant of a $3 \times 3$ matrix is to u
 \]
 
 \thmr{Cofactor Expansion}{}{
-    We may expandalong row $i$:
+    We may expand along row $i$:
 
     \[
         \det(A) = a_{i1}C_{i1} + a_{i2}C_{i2} + \cdots + a_{in}C_{in} = \sum_{j=1}^{n} a_{ij}C_{ij}
@@ -1293,7 +1293,7 @@ In order to do so, you need to show:
 
 \rmkb{
     Also, make sure W is a subset of V (which is defined in the definition of the subspace).\\
-    Notice that the textbook sometimes wrote the third line as "contains the zero vector". Here we are actually proving the subset is non-empty, and show that it contains the zero vector is the way we do so. 
+    Notice that the textbook sometimes wrote the third line as "contains the zero vector". Here we are actually proving the subset is non-empty, and showing that it contains the zero vector is the way we do so. 
 }
 
 \subsubsection{Sets}
@@ -1443,48 +1443,383 @@ however, if the equation is non-homogeneous, it doesn't work. (Not a Subspace)
         2(5-3t, -2+t, t) = (10-6t, -4+2t, 2t) \notin S
     \]
     \\ Therefore it is not a subspace.
-    
+}
+
+\newpage
+\subsection{More on Subspace}
+\subsubsection{matrix}
+\defn{Symmetric Matrices}{
+    A matrix $A$ is \textbf{symmetric} if $A = A^T$.
 
 }
+\ex{
+    Let $S$ be the set of all symmetric $2 \times 2$ matrices. Show that $S$ is a subspace of $M_{2 \times 2}(\mathbb{R})$.\\
+    \textbf{Proof:} \\
+    1. Non-empty: 
+    \[
+        \begin{bmatrix}
+            0 & 0\\
+            0 & 0
+        \end{bmatrix}
+        \text{ in }
+        \begin{bmatrix}
+            a & b\\
+            b & c
+        \end{bmatrix}
+    \]
+    is a symmetric matrix.\\
+    2. Closure under addition: 
+    \[
+        \begin{bmatrix}
+            a_1 & b_1\\
+            b_1 & c_1
+        \end{bmatrix}
+        +
+        \begin{bmatrix}
+            a_2 & b_2\\
+            b_2 & c_2
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+            a_1 + a_2 & b_1 + b_2\\
+            b_1 + b_2 & c_1 + c_2
+        \end{bmatrix}
+    \]
+    is a symmetric matrix.\\
+    3. Closure under scalar multiplication: 
+    \[
+        c \begin{bmatrix}
+            a & b\\
+            b & c
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+            ca & cb\\
+            cb & cc
+        \end{bmatrix}
+    \]
+    is a symmetric matrix.\\
+    Therefore, $S$ is a subspace of $M_{2 \times 2}(\mathbb{R})$.
+}
+
+\defn{Skew-Symmetric Matrix}{
+    A matrix $A$ is \textbf{skew-symmetric} if $A = -A^T$.
+}
+Generic form of a skew-symmetric matrix:
+\[
+    \begin{bmatrix}
+        0 & a\\
+        -a & 0
+    \end{bmatrix}
+\]
+
+\subsubsection{Polynomials}
+The set of solutions to the linear homogeneous differential equation \[y'' + a_1(x)y' + a_2(x)y = 0\]is a subspace of $\mathbb{C}^2(\mathbb{R})$.
+\rmkb{
+    $\mathbb{C}^2(\mathbb{R})$ is a vector space of twice differentiable functions.\\
+    Polynomials are infinite differentiable functions.\\
+    An example of non-twice differentiable functions is $|x|$.
+}
+
+\ex{
+    1. Does the zero vector satisfy the equation?\\
+    $ f_0(x) = 0$ is the zero vector in the parent space. It's the function that sends every x to zero. 
+    \[
+        f_0'' + a_1(x)f_0' + a_2(x)f_0 = 0
+    \]
+    2. Closure under addition:
+    \[
+        f_1'' + a_1(x)f_1' + a_2(x)f_1 = 0
+    \]
+    \[
+        f_2'' + a_1(x)f_2' + a_2(x)f_2 = 0
+    \]
+    \[
+        (f_1 + f_2)'' + a_1(x)(f_1 + f_2)' + a_2(x)(f_1 + f_2) = 0
+    \]
+    3. Closure under scalar multiplication:
+    \[
+        \lambda (f_1'' + a_1(x)f_1' + a_2(x)f_1) = 0
+    \]
+    \[
+        (\lambda f_1)'' + a_1(x)(\lambda f_1)' + a_2(x)(\lambda  f_1) = 0
+    \]
+}
+
+\subsection{Two important subspaces}
+\begin{enumerate}
+    \item $V \subset V$
+    \item $\{\vec{0}\} \subset V$.
+\end{enumerate}
+\defn{Trivial Subspace}{
+    The \textbf{trivial subspace} of a vector space $V$ is the set $\{0\}$.
+}
+\pf{ Zero is a subset of every vector space:\\
+    1. Non-empty: $\vec{0} \in \{0\}$.\\
+    2. Closure under addition: $\vec{0} + \vec{0} = \vec{0} \in \{0\}$.\\
+    3. Closure under scalar multiplication: $\lambda \vec{0} = \vec{0} \in \{0\}$.\\
+    Therefore, $\{\vec{0}\}$ is a subspace of $V$.
+
+}
+\defn{Improper Subspace}{
+    The \textbf{improper subspace} of a vector space $V$ is the set $V$ itself.
+}
+
+
+
 
 % ------------------------------------------------------------------------------
 \newpage
 \section{Lecture 13: Spanning Set}
+\subsection{Important fact about subspaces}
+\rmk{
+    This lecture covers: 
+    \begin{itemize}
+        \item 4.4 Spanning Sets
+    \end{itemize}
+}
+\rmkb{
+    A linear combination of vectors $v_1, v_2, \cdots, v_n$ is $\vec{v} = c_1\vec{v_1} + c_2\vec{v_2} + \cdots + c_n\vec{v_n}$. 
+}
+\fact{
+    All the $c$ can be zero. 
+}
+\fact{
+    \[
+        \vec{v} = 1 \cdot \vec{v}
+    \]
+    A vector can be a linear combination of itself.
+}
+\fact{
+    Multiplication of matrices:
+    \[
+        A = \begin{bmatrix}
+            \vec{c_1} & \vec{c_2} & \cdots & \vec{c_n}
+        \end{bmatrix}
+    \]
+    \[
+        \vec{A} = \begin{bmatrix}
+            a_1\\
+            a_2\\
+            \vdots\\
+            a_n
+        \end{bmatrix}
+    \]
+    \[
+        A\vec{x} = a_1\vec{c_1} + a_2\vec{c_2} + \cdots + a_n\vec{c_n}
+    \]
+}
 
+Notice $A (\lambda \vec{c})$ = 
+\[
+    \vec{v} = \begin{bmatrix}
+        a_1\\
+        a_2\\
+        \vdots\\
+        a_n
+    \end{bmatrix}
+, \lambda \vec{v} = \begin{bmatrix}
+    \lambda a_1\\
+    \lambda a_2\\
+    \vdots\\
+    \lambda a_n
+\end{bmatrix}
+\]
+\[
+    A(\lambda \vec{v}) = \lambda a_1 \vec{c_1} + \lambda a_2 \vec{c_2} + \cdots + \lambda a_n \vec{c_n}    
+\]
+\[
+    = \lambda (a_1 \vec{c_1} + a_2 \vec{c_2} + \cdots + a_n \vec{c_n})= \lambda A(\vec{v})
+\]
+This is very useful when dealing with null space. 
+\ex{
+    Let \[
+        A = \begin{bmatrix}
+            1 & 2\\
+            3 & 4
+        \end{bmatrix}
+    , \vec{v} = \begin{bmatrix}
+        a\\
+        b
+    \end{bmatrix}
+    \]
+    \[
+        A\vec{v} = 
+        \begin{bmatrix}
+            a + 2b\\
+            3a + 4b
+        \end{bmatrix}
+        = \boxed{a\begin{bmatrix}
+            1\\
+            3
+        \end{bmatrix}
+        + b\begin{bmatrix}
+            2\\
+            4
+        \end{bmatrix}}
+    \]
 
+}
+\subsection{Null Space}
+\defn{Null space}{
+    Let A be an $m \times n$ matrix. The \textbf{null space} of A, denoted by $N(A)$, is the set of all solutions to the homogeneous equation $A\vec{x} = \vec{0}$.
+    \[
+        \text{null}(A) = \{\vec{x} \in \mathbb{R}^n | A\vec{x} = \vec{0}\}
+    \]
+}
+\pf{
+    The null space is a subspace of $\mathbb{R}^n$:
+    \begin{enumerate}
+        \item Non-empty: \\
+        $A \vec{0} = 0\vec{c_1} + 0\vec{c_2} + \cdots + 0\vec{c_n} = \vec{0}$.\\
+        $\vec{0} \in \text{null}(A)$.
+        \item Closure under addition: \\ If $\vec{u}, \vec{v} \in \text{null}(A)$, then $A(\vec{u} + \vec{v}) = A\vec{u} + A\vec{v} = \vec{0} + \vec{0} = \vec{0}$.
+        \item Closure under scalar multiplication: \\If $\vec{u} \in \text{null}(A)$, then $A(\lambda \vec{u}) = \lambda A\vec{u} =  \lambda \vec{0} = \vec{0}$.
+    \end{enumerate}
+}
 
+\ex{
+    Let 
+    \[
+        A = \begin{bmatrix}
+            1 & 2 & 3\\
+            0 & 1 & 2\\
+            0 & 0 & 1
+        \end{bmatrix}
+    \]
+    \[null(A) = \{\vec{x} \in \mathbb{R}^3 | A\vec{x} = \vec{0}\}\]
+    The solution is:
+    \[
+        \begin{bmatrix}
+            1 & 2 & 3\\
+            0 & 1 & 2\\
+            0 & 0 & 1
+        \end{bmatrix}
+        \begin{bmatrix}
+            x_1\\
+            x_2\\
+            x_3
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+            0\\
+            0\\
+            0
+        \end{bmatrix}
+    \]
+    The system has a unique solution:
+    \[
+        \vec{x} = \begin{bmatrix}
+            0\\
+            0\\
+            0
+        \end{bmatrix}
+    \]
+    The null space of A is the zero vector.
+}
+\newpage
+\ex{
+    Let \[
+        A = \begin{bmatrix}
+            1 & -2 & 0\\
+            0 & 0 & 0\\
+            0 & 0 & 0
+        \end{bmatrix}
+    \] \\
+    \\We have two free variables,
+    let $x_2 = s, x_3 = t$
+    \[
+        \text{null} A = \{(2t,t,s)| s, t \in \mathbb{R}\}
+    \]
 
+    \[
+        = \boxed{\{t(2,1,0) + s(0,0,1) | s, t \in \mathbb{R}\}}
+    \]
+}
+\rmkb{
+    Notice that we can write the definition of the set in terms of the linear combination of the vectors. Every vector in the set can be written as a linear combination of these vectors. We call this the \textbf{spanning set}.
+}
+\subsection{Spanning Set}
+\defn{Spanning Set}{
+    Let $V$ be a vector space and let $S = \{\vec{v_1}, \vec{v_2}, \cdots, \vec{v_n}\}$ be a set of vectors in $V$. The \textbf{span} of $S$, denoted by $\text{span}(S)$, is the set of all linear combinations of the vectors in $S$.
+    \[
+        \text{span}(S) = \{c_1\vec{v_1} + c_2\vec{v_2} + \cdots + c_n\vec{v_n} | c_1, c_2, \cdots, c_n \in \mathbb{R}\}
+    \]
+}
 
+\ex{
+    $\mathbb{R}^2$ is the span of 
+    \[
+        S = \{(1,0), (0,1)\}
+    \]
+    How do we know that:
+    Let (a,b) be in $\mathbb{R}^2$.\\
+    \[
+        (a,b) = a(1,0) + b(0,1)
+    \]
+    Everything in $\mathbb{R}^2$ can be written as a linear combination of (1,0) and (0,1).\\
+    Everything in span of S is in $\mathbb{R}^2$.\\
+    Therefore, $\mathbb{R}^2 = \text{span}(S)$.
+}
 
+\ex{
+    \[
+        M_{2 \times 2}(\mathbb{R}) = \text{span}
+            \begin{Bmatrix}
+                \begin{bmatrix}
+                    1 & 0\\
+                    0 & 0
+                \end{bmatrix},
+                \begin{bmatrix}
+                    0 & 1\\
+                    0 & 0
+                \end{bmatrix},
+                \begin{bmatrix}
+                    0 & 0\\
+                    1 & 0
+                \end{bmatrix},
+                \begin{bmatrix}
+                    0 & 0\\
+                    0 & 1
+                \end{bmatrix}
+            \end{Bmatrix}
+    \]
+}
 
+\fact{
+    For any subset $S$ of $V_1$, the span of the subset is a subspace of the vector space.
+}
+\pf{
+    The span of a subset is a subspace of the vector space.\\
+    Let $S = \{\vec{v_1}, \vec{v_2}, \cdots, \vec{v_n}\}$ be a subset of $V$.\\
+    1. Non-empty: $\vec{0}=0\vec{v_1}$,$\vec{0} \in \text{span}(S)$.\\
+    2. Closure under addition: If $\vec{u}, \vec{v} \in \text{span}(S)$, then 
+    \[
+        \vec{u} = c_1\vec{v_1} + c_2\vec{v_2} + \cdots + c_n\vec{v_n}
+    \]
+    \[
+        \vec{v} = d_1\vec{v_1} + d_2\vec{v_2} + \cdots + d_n\vec{v_n}
+    \]
+    \[
+        \vec{u} + \vec{v} = (c_1 + d_1)\vec{v_1} + (c_2 + d_2)\vec{v_2} + \cdots + (c_n + d_n)\vec{v_n} \in \text{span}(S)
+    \]
+    3. Closure under scalar multiplication: 
+    If $\vec{u} \in \text{span}(S)$, 
+    Let $\lambda \in \mathbb{R}$,
+    \[
+        \lambda \vec{u} = \lambda(c_1\vec{v_1} + c_2\vec{v_2} + \cdots + c_n\vec{v_n}) = (\lambda c_1)\vec{v_1} + (\lambda c_2)\vec{v_2} + \cdots + (\lambda c_n)\vec{v_n} 
+    \]
+    Which is a linear combination of the vectors in $S$.\\
+    \[
+        \lambda \vec{u} \in \text{span}(S)
+    \]
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\rmkb{
+    When we have a solution for a homogeneous equation, it turns out to be a spanning set. \\
+    We also use a spanning set for dimension.\\
+    The span is linearly independent.
+}
 
 \newpage
 \section{Lecture 14: Spanning, Linear Independence \& Basis}
