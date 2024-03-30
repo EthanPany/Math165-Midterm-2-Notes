@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1711603408.81116 "/u/ypan36/Math165/studyGroup_3_25/main.tex" "main.pdf" "main" 1711603411.24895 0
-  "/u/ypan36/Math165/studyGroup_3_25/main.tex" 1711603406.89882 23323 0b8c80bbcdc61bf76fd454d2d05de2f4 ""
+["pdflatex"] 1711824530.14773 "/u/ypan36/Math165/studyGroup_3_25/main.tex" "main.pdf" "main" 1711824533.43917 0
+  "/u/ypan36/Math165/studyGroup_3_25/main.tex" 1711824529.87143 37358 3ed7c86059a227da74a58125e72e6f0f ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -14,6 +14,8 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm" 1136768653 1332 f817c21a1ba54560425663374f1b651a ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm" 1136768653 1336 3125ccb448c1a09074e3aa4a9832f130 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm" 1136768653 1532 9162035f4e7176612125649e348e2195 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -199,9 +201,9 @@
   "commands.tex" 1711395272.63752 39 4441177d9bb7b869a8d1fec2256bd52e ""
   "img/Snipaste_2024-03-27_13-52-06.png" 1711561983.69308 175887 d983d70edcd43fa1482059aed3867a99 ""
   "img/Snipaste_2024-03-27_22-33-20.png" 1711593210.09974 101380 4c5921088d91ed9f942f3a3c8c91926d ""
-  "main.aux" 1711603411.07584 4325 3dbd7b61356c151dc126f0e9e95bc7a1 "pdflatex"
-  "main.out" 1711603411.07884 4740 223da3f1109f34b0541e4569a4c1454c "pdflatex"
-  "main.toc" 1711603411.07984 2221 6a547faf45eb233ce0f97374c84952f5 "pdflatex"
+  "main.aux" 1711824533.25344 6296 b8a580a3af5b941cdc6584e41735f7aa "pdflatex"
+  "main.out" 1711824533.25644 6409 2f783b4700e52de7ed5f9742e16e79a0 "pdflatex"
+  "main.toc" 1711824533.25844 3460 facc5a7ad4a77c1ea2039525bca052c6 "pdflatex"
   "theorems.tex" 1711395272.51352 6337 a1c81daa226fe1f11567dbeb9bb5f3b7 ""
   (generated)
   "main.aux"

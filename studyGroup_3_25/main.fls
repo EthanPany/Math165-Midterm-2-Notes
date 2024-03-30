@@ -1095,6 +1095,8 @@ INPUT ./img/Snipaste_2024-03-27_22-33-20.png
 INPUT img/Snipaste_2024-03-27_22-33-20.png
 INPUT ./img/Snipaste_2024-03-27_22-33-20.png
 INPUT ./img/Snipaste_2024-03-27_22-33-20.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
