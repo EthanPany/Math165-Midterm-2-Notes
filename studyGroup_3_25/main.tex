@@ -26,9 +26,9 @@
 }
 
 % Variables
-\def\notetitle{MATH 165\\Linear Algebra \& Diff. Equation\\Midterm II \\Review Note with Examples}
+\def\notetitle{MATH 165\\Linear Algebra \& Diff. Equation\\Midterm II \\Notes with Examples}
 \def\noteauthor{
-    \textbf{Professor Madhu} \\ 
+    \textbf{Professor Kalyani Madhu} \\ 
     % {\LaTeX} 
     by Ethan\\
     University of Rochester}
@@ -988,6 +988,7 @@ We define a vector v in the xy-plane to be the directed line segment from $(0, 0
     \item If we multiply any vector by a scalar $\lambda \in R$, we get a new vector $\lambda v = (\lambda x, \lambda y)$ which is again a vector in the xy-plane. This is called \textbf{closure under scalar multiplication}, and $\mathbb{R}$ is called the \textbf{scalar field}.
 \end{itemize}
 \rmkb{
+    Closure means after operations we are still in the same vector space. \\
     Note that in Math 165 we do not multiply vectors by vectors, only by scalars.
 }
 
@@ -1119,7 +1120,11 @@ This is a crucial idea in the theory of vector spaces.
     \]
     \textbf{Is the set of polynomials of degree exactly n a vector space?} \\
     No, because it does not satisfy the closure under addition axiom.\\
-    Counterexample: $x^n + (-x^n) = 0$ which is a zero polynomial with a degree undefined which is not in the vector space.
+    Counterexample: $x^n + (-x^n) = 0$ which is a zero polynomial with a degree undefined which is not in the vector space.\\\\
+    \textbf{Zero vector} in polynomial vector space is the zero polynomial:
+    \[
+        0 = 0 + 0x + \cdots + 0x^n
+    \]
 }
 \subsubsection{Matrix:}
 \ex{
@@ -1164,6 +1169,15 @@ This is a crucial idea in the theory of vector spaces.
             ca_{m1} & ca_{m2} & \cdots & ca_{mn}
         \end{bmatrix}
     \]
+    \textbf{Zero vector} in the matrix-vector space is the zero matrix:
+    \[
+        0 = \begin{bmatrix}
+            0 & 0 & \cdots & 0\\
+            0 & 0 & \cdots & 0\\
+            \vdots & \vdots & \ddots & \vdots\\
+            0 & 0 & \cdots & 0
+        \end{bmatrix}
+    \]
 }
 
 \subsubsection{Function:}
@@ -1177,11 +1191,265 @@ This is a crucial idea in the theory of vector spaces.
     \[
         (cf)(x) = cf(x)
     \]
+    \textbf{Zero vector} in the function vector space is the zero function:
+    \[
+        0(x) = 0
+    \]
 }
 % ------------------------------------------------------------------------------
 \newpage
 \section{Lecture 12: Vector Subspace \& Proof}
+\rmk{
+    This lecture covers: 
+    \begin{itemize}
+        \item 4.2 Definition of a Vector Space
+        \item 4.3 Subspaces
+    \end{itemize}
+}
 
+\subsection{Some properties for Vector Spaces}
+\thmr{}{}{
+    Once we show V is a vector space, then everything that's true for vector spaces is true for V. The following properties hold for all vector spaces:
+    \begin{enumerate}
+        \item The zero vector is unique.
+        \item The additive inverse of a vector is unique.
+        \item Any scalar times the zero vector is the zero vector. \\   $\lambda \cdot \vec{0} = \vec{0}$ for all $\lambda$.
+        \item The scalar 0 times any vector is the zero vector. \\  $0\vec{v} = \vec{0}$ for all $\vec{v}$.
+        \item The scalar -1 times any vector is the additive inverse of the vector. \\  $-1\vec{v} = -\vec{v}$ for all $\vec{v}$.
+        \item If $k$ is a scalar and $\vec{u} \in V$ such that $k\vec{u} = \vec{0}$, then $k = 0$ or $\vec{u} = \vec{0}$.
+        \item Cancelation law: If $k\vec{u} = k\vec{v}$ and $k \neq 0$, then $\vec{u} = \vec{v}$.
+    \end{enumerate}
+}
+\rmkb{
+    Uniqueness: At least one and at most one. 
+}
+\pf{
+    7, the reason we can cancel:\\
+    Let $\vec{v} + \vec{w} = \vec{v} + \vec{z}$
+    \[
+        - \vec{v} + (\vec{v} + \vec{w}) = - \vec{v} + (\vec{v} + \vec{z})
+    \]
+    \[(-\vec{v}+\vec{v})+\vec{w} = (\vec{-v} + \vec{v} + \vec{z}) \]
+    \[\vec{0} + \vec{w} = \vec{0} + \vec{z} \]
+    \[\boxed{\vec{w} = \vec{z}}\]
+}
+\pf{
+    1, proof that the zero vector is unique
+
+    Suppose $\vec{0_1}$ and $\vec{0_2}$ are both zero vectors. (both have zero properties)
+
+    Let $\vec{v} \in V$
+    \[\vec{v} + \vec{0_1} = \vec{v}\]
+    \[\vec{v} + \vec{0_2} = \vec{v}\]
+    \[\vec{v} + \vec{0_1} = \vec{v} + \vec{0_2}\]
+    \[\boxed{\vec{0_1} = \vec{0_2}}\]
+    Therefore, for each vector space, there is only one zero vector.
+}
+
+\pf{
+    2, proof that the additive inverse of a vector is unique
+    5, $-\vec{v} = (-1)\vec{v}$. \\
+    \[
+        \vec{v} = (-1)\vec{v} = 1\vec{v} + (-1)\vec{v} = (1-1)\vec{v} = 0\vec{v} = \vec{0}
+    \]
+    $\because$ Inverses are unique \\
+    $\therefore \boxed{(-1) \vec{v} = -\vec{v}}$ 
+
+}
+
+
+
+
+
+\subsection{Vector Subspace}
+
+\defn{Vector Subspace}{
+    A non-empty subset $W$ of a vector space $V$ is called a \textbf{subspace} of $V$ if it is itself a vector space. 
+}
+
+\thmr{}{}{
+    A non-empty subset $W$ of a vector space $V$ is called a \textbf{subspace} of $V$ if $W$ is itself a vector space under the operations of addition and scalar multiplication defined in $V$.
+}
+\pf{
+    To show that $W$ is a subspace of $V$, we need to show that $W$ is a vector space. This means that we need to show that $W$ satisfies all the axioms of a vector space. 
+
+    We get the associative, commutative, and distributive for free. 
+    Because $W$ is closed under scalar multiplication, $(1)\vec{v} = \vec{v}$ is in $W$ if $\vec{v}$ is, and we get inverses. Because we have inverses, and we’re closed under vector addition, we get $\vec{0}$.
+
+}
+
+
+
+It is easier to show a set is a Vector Space by showing it is a subspace of a known vector space. Once we prove it is a subspace, we can use all the axioms of vector space.
+
+
+
+In order to do so, you need to show:
+\begin{itemize}
+    \item W is a non-empty set.
+    \item W is closed under addition.
+    \item W is closed under scalar multiplication.
+\end{itemize}
+
+\rmkb{
+    Also, make sure W is a subset of V (which is defined in the definition of the subspace).\\
+    Notice that the textbook sometimes wrote the third line as "contains the zero vector". Here we are actually proving the subset is non-empty, and show that it contains the zero vector is the way we do so. 
+}
+
+\subsubsection{Sets}
+\ex{
+    \[
+        \mathbb{R}^2 = \{(x,y) | x, y \in \mathbb{R}\}
+    \]
+    \[
+        W = \{
+            (a, 0) | a \in \mathbb{R}
+        \}
+    \]
+    Show that $W$ is a subspace of $\mathbb{R}^2$.\\
+    \textbf{Proof:} \\
+    1. Non-empty: Show the zero vector (that belongs to $\mathbb{R}^2$)\\
+    \[
+        \vec{0} = (0,0)
+    \]
+    $(0,0)$ has the property that the second coordinate is 0. Therefore zero vector is in $W$.\\
+    2. Closure under addition: 
+    Let $W_1 = (a_1, 0)$ and $W_2 = (a_2, 0)$ be in $W$. \\
+    Then $W_1 + W_2 = (a_1 + a_2, 0) \in W$.\\
+    Since $(a_1 + a_2, 0)$ has the property that the second coordinate is 0, it is in $W$.\\
+    So $W$ is closed under addition.\\
+    3. Closure under scalar multiplication: 
+    Let $W_1 = (a, 0)$ be in $W$.\\
+    Then $\lambda W_1 = \lambda(a, 0) = (\lambda a, 0) \in W$.\\
+
+}
+
+
+\ex{
+    $S = \{(x, mx)|x \in \mathbb{R}\}$, $V = \mathbb{R}^2$ is a subspace of $\mathbb{R}^2$. That is, the set of points that constitute a line through the origin is a subspace of $\mathbb{R}^2$. Show also that lines not through the origin are not subspaces.
+
+    \textbf{Proof:} \\
+    1. Non-empty: $(0, 0) \in S$.\\
+    2. Closure under addition: Let $(x_1, mx_1), (x_2, mx_2) \in S$. Then $(x_1, mx_1) + (x_2, mx_2) = (x_1 + x_2, mx_1 + mx_2) \in S$.\\
+    3. Closure under scalar multiplication: Let $(x, mx) \in S$. Then $c(x, mx) = (cx, cmx) \in S$.\\
+}
+
+\subsubsection{Polynomials}
+\ex{
+    If $m < n$, $P_m(\mathbb{R})$ is a subspace of $P_n(\mathbb{R})$.\\
+    This is true because polynomials with a degree less than $m$ are in the set of polynomials with a degree $m$ or less. 
+}
+
+\subsubsection{Matrices}
+
+\ex{
+    Show that the solution set is a subspace of $\mathbb{R}^3$.\\
+    \[
+        \begin{matrix}
+            x_1 + 2x_2 - x_3 & = & 0\\
+            2x_1 + 5x_2 - 4x_3 & = & 0
+        \end{matrix}
+    \]
+
+    \[
+        \begin{bmatrix}
+            \begin{array}{ccc|c}
+                1 & 2 & -1 & 0\\
+                2 & 5 & -4 & 0
+            \end{array}
+        \end{bmatrix}
+    \]
+    RREF:
+    \[
+        \begin{bmatrix}
+            \begin{array}{ccc|c}
+                1 & 2 & -1 & 0\\
+                0 & 1 & -2 & 0
+            \end{array}
+        \end{bmatrix}
+    \]
+    \[
+        \begin{matrix}
+            x_1 + 2x_2 - x_3 & = & 0\\
+            x_2 - 2x_3 & = & 0
+        \end{matrix}
+    \]
+    The solution set: 
+    \[
+        S = \{(-3t, 2t, t) \mid t \in \mathbb{R}\}
+    \]
+    1. Non-empty: $(0, 0, 0) \in S$. (Let $t = 0$)\\
+    2. Closure under addition:
+    \[
+        \text{Let } \begin{matrix}
+            \vec{w_1} & = & t_1 (-3,2,1)\\
+            \vec{w_2} & = & t_2 (-3,2,1)
+        \end{matrix} 
+    \]
+    \[
+        \vec{w_1} + \vec{w_2} = t_1(-3,2,1) + t_2(-3,2,1) = (t_1 + t_2)(-3,2,1) \in S
+    \]
+    3. Closure under scalar multiplication:
+    \[
+        \text{Let } \vec{w} = t(-3,2,1) \in S \text{ and } \lambda \in \mathbb{R}
+    \]
+    \[
+        \lambda \vec{w} = \lambda t(-3,2,1) = (\lambda t)(-3,2,1) \in S
+    \]
+}
+however, if the equation is non-homogeneous, it doesn't work. (Not a Subspace)
+\ex{
+    \[
+        \begin{matrix}
+            x_1 + 2x_2 - x_3 & = & 1\\
+            2x_1 + 5x_2 - 4x_3 & = & 0
+        \end{matrix}
+    \]
+    \[
+        \begin{bmatrix}
+            \begin{array}{ccc|c}
+                1 & 2 & -1 & 1\\
+                2 & 5 & -4 & 0
+            \end{array}
+        \end{bmatrix}
+    \]
+    RREF:
+    \[
+        \begin{bmatrix}
+            \begin{array}{ccc|c}
+                1 & 0 & 3 & 5\\
+                0 & 1 & -2 & -2
+            \end{array}
+        \end{bmatrix}
+    \]
+    \newpage
+    The solution set:
+    \[
+        S = \{(5-3t, -2+t, t) \mid t \in \mathbb{R}\}
+    \]
+    \[
+        S = \{(5,-2,0) + (-3, 2,1)t | t \in \mathbb{R} \}
+    \]
+    \\This is not a subspace because the zero vector is not in S.
+    \[
+        (0,0,0) \neq (5,-2,0) + t(-3,2,1) \in S
+    \]
+    \\It is also not closed under the addition:
+    \[
+        (5-3t_1, -2+t_1, t_1) + (5-3t_2, -2+t_2, t_2) = (10-3(t_1+t_2), -4 + (t_1+t_2), t_1+t_2) \notin S
+    \]
+    \\It is not closed under scalar multiplication either:
+    \[
+        2(5-3t, -2+t, t) = (10-6t, -4+2t, 2t) \notin S
+    \]
+    \\ Therefore it is not a subspace.
+    
+
+}
+
+% ------------------------------------------------------------------------------
+\newpage
+\section{Lecture 13: Spanning Set}
 
 
 
@@ -1219,10 +1487,6 @@ This is a crucial idea in the theory of vector spaces.
 
 
 \newpage
-\section{Lecture 13: Spanning Set}
-
-
-% \newpage
 \section{Lecture 14: Spanning, Linear Independence \& Basis}
 
 % \newpage
@@ -1231,45 +1495,45 @@ This is a crucial idea in the theory of vector spaces.
 % \newpage
 \section{Lecture 16: Basis, Row and Columns Spaces}
 % ------------------------------------------------------------------------------
-\newpage
-\chapter{Office Hour Notes}
-\section{3/28}
-\subsection{Span and independent}
-Span:
-\ex{
-    \[
-        \begin{bmatrix}
-            \begin{array}{ccc|c}
-                1 & 2 & 3 & x\\
-                4 & 5 & 6 & y\\
-                7 & 8 & 9 & z
-            \end{array}
-        \end{bmatrix}
-    \]
-    \textbf{Does it span $\mathbb{R}^3$?} \\
-    REF:
-    \[
-        \begin{bmatrix}
-            \begin{array}{ccc|c}
-                1 & 2 & 3 & x\\
-            0 & -3 & -6 & y-4x\\
-            0 & 0 & 0 & z+x-2y
-            \end{array}
-        \end{bmatrix}
-    \]
-    The augmented matrix only be consistent when $z+x-2y = 0$. Therefore, it does not span $\mathbb{R}^3$.\\
-    However, it does span $S=\{x,y,z|z+x-2y = 0 \}$ which is a subspace of $\mathbb{R}^3$.
-}
-\\
-Infinite dimensional matrix:
-\ex{
-    \[
-        P(\mathbb{R}) = \text{all polynomials}
-    \] 
-    \[
-        \beta = \{1, x, x^2, x^3, \cdots \}
-    \]
-}
+% \newpage
+% \chapter{Office Hour Notes}
+% \section{3/28}
+% \subsection{Span and independent}
+% Span:
+% \ex{
+%     \[
+%         \begin{bmatrix}
+%             \begin{array}{ccc|c}
+%                 1 & 2 & 3 & x\\
+%                 4 & 5 & 6 & y\\
+%                 7 & 8 & 9 & z
+%             \end{array}
+%         \end{bmatrix}
+%     \]
+%     \textbf{Does it span $\mathbb{R}^3$?} \\
+%     REF:
+%     \[
+%         \begin{bmatrix}
+%             \begin{array}{ccc|c}
+%                 1 & 2 & 3 & x\\
+%             0 & -3 & -6 & y-4x\\
+%             0 & 0 & 0 & z+x-2y
+%             \end{array}
+%         \end{bmatrix}
+%     \]
+%     The augmented matrix only be consistent when $z+x-2y = 0$. Therefore, it does not span $\mathbb{R}^3$.\\
+%     However, it does span $S=\{x,y,z|z+x-2y = 0 \}$ which is a subspace of $\mathbb{R}^3$.
+% }
+% \\
+% Infinite dimensional matrix:
+% \ex{
+%     \[
+%         P(\mathbb{R}) = \text{all polynomials}
+%     \] 
+%     \[
+%         \beta = \{1, x, x^2, x^3, \cdots \}
+%     \]
+% }
 
 
 
