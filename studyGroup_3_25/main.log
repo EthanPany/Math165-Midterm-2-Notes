@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2024.3.11)  30 MAR 2024 19:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2024.3.11)  30 MAR 2024 21:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -657,7 +657,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.50 ..., Row and Columns Spaces}{37}{section.2.6}
+l.50 ..., Row and Columns Spaces}{38}{section.2.6}
                                                   % [1
 
 ])
@@ -1129,23 +1129,33 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 1822--1823
 []$[]$
  []
 
-[36] [37] (./main.aux)
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 1912--1912
+
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 1912--1913
+[]$[]$
+ []
+
+[37] [38] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5B64C30E765CE4FBE04A41AA52C87194;7202.
  ) 
 Here is how much of TeX's memory you used:
- 26551 strings out of 477497
- 523604 string characters out of 5824788
+ 26554 strings out of 477497
+ 523645 string characters out of 5824788
  1878793 words of memory out of 6000000
- 46042 multiletter control sequences out of 15000+600000
+ 46044 multiletter control sequences out of 15000+600000
  523681 words of font info for 74 fonts, out of 8000000 for 9000
  370 hyphenation exceptions out of 8191
  83i,21n,80p,655b,1100s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (38 pages, 445160 bytes).
+Output written on main.pdf (39 pages, 447384 bytes).
 PDF statistics:
- 544 PDF objects out of 1000 (max. 8388607)
- 463 compressed objects within 5 object streams
- 149 named destinations out of 1000 (max. 500000)
+ 548 PDF objects out of 1000 (max. 8388607)
+ 466 compressed objects within 5 object streams
+ 150 named destinations out of 1000 (max. 500000)
  295 words of extra memory for PDF output out of 10000 (max. 10000000)
 

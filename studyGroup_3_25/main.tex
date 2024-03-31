@@ -1824,7 +1824,114 @@ This is very useful when dealing with null space.
 \newpage
 \section{Lecture 14: Spanning, Linear Independence \& Basis}
 
-% \newpage
+
+\rmkb{
+    The intuitive meaning of spanning is that if I want to go from point A to point B in the vector land, I can go along the set of vectors to go there. 
+}
+
+
+% \fact{
+%     The span of a non-empty subset of $V$ is always a subset of $V$.
+% }
+
+% \pf{
+%     The span of non-empty subset of $V$ is always a subspace of $V$.\\
+%     Let $S = \{\vec{v_1}, \vec{v_2}, \cdots, \vec{v_n}\}$ be a non-empty subspace of $V$.\\
+%     1. Non-empty: 
+%     \[
+%         \vec{0} = 0\vec{v_1} + 0\vec{v_2} + \cdots + 0\vec{v_n} \in \text{span}(S)
+%     \]
+%     2. Closure under addition:
+%     \[
+%         \vec{u} = c_1\vec{v_1} + c_2\vec{v_2} + \cdots + c_n\vec{v_n}
+%     \]
+%     \[
+%         \vec{v} = d_1\vec{v_1} + d_2\vec{v_2} + \cdots + d_n\vec{v_n}
+%     \]
+%     \[
+%         \vec{u} + \vec{v} = (c_1 + d_1)\vec{v_1} + (c_2 + d_2)\vec{v_2} + \cdots + (c_n + d_n)\vec{v_n} \in \text{span}(S)
+%     \]
+%     3. Closure under scalar multiplication:
+%     \[
+%         \lambda \vec{u} = \lambda(c_1\vec{v_1} + c_2\vec{v_2} + \cdots + c_n\vec{v_n}) = (\lambda c_1)\vec{v_1} + (\lambda c_2)\vec{v_2} + \cdots + (\lambda c_n)\vec{v_n} \in \text{span}(S)
+%     \]
+% }
+
+Show a set span of a particular vector space:
+\ex{
+    Let 
+    \[
+        S = \{(1,3),(2,-1)\}, S \subset \mathbb{R}^2
+    \]
+    We want to know is $\mathbb{R}^2 = \text{span}(S)$?
+    Are there scalars $C_1, C_2$ such that any vector in $\mathbb{R}^2$ $\begin{bmatrix}
+        a\\b
+    \end{bmatrix}$can be written as a linear combination of $(1,3)$ and $(2,-1)$?\\
+    If A = $\begin{bmatrix}
+        \vec{c_1} & \vec{c_2} & \cdots & \vec{c_n}
+    \end{bmatrix}$ 
+    If x = $\begin{bmatrix}
+        \lambda_1\\\lambda_2\\ \vdots \\ \lambda_n
+    \end{bmatrix}$\\
+    Then $A\vec{x} = \lambda_1\vec{c_1} + \lambda_2\vec{c_2} + \cdots + \lambda_n\vec{c_n}$\\
+    \[
+        \begin{bmatrix}
+            1 & 2\\
+            3 & -1
+        \end{bmatrix}
+        \begin{bmatrix}
+            \vec{\lambda_1} \\ \vec{\lambda_2}
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+            a\\b
+        \end{bmatrix}
+    \]
+    Solve:
+    \[
+        \begin{bmatrix}
+            \begin{array}{cc|c}
+                1 & 2 & a\\
+                3 & -1 & b
+            \end{array}
+        \end{bmatrix}
+    \]
+    Is there a solution no matter a, b is?
+    What is the determinant of the matrix?
+    \[
+        \det \begin{bmatrix}
+            1 & 2\\
+            3 & -1
+        \end{bmatrix}
+        = -1-6 = -7 \neq 0
+    \]
+    A solution exists for any a, b.\\
+    Therefore, no matter what a, b I choose in $\mathbb{R}^2$, I can always find $c_1, c_2$ so that a, b is a linear combination of (1,3) and (2,-1).\\
+    Therefore, $\mathbb{R}^2 = \text{span}(S)$.
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
 \section{Lecture 15: Linear Independence \& Basis and dimension}
 
 % \newpage
