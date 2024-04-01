@@ -2308,6 +2308,14 @@ Let $S = \{(1,0), (0,1), (1,3)\} \subset \mathbb{R}^2$. Find span(S)\\
 
 \newpage
 \section{Lecture 15: Linear Independence \& Basis and dimension}
+\rmk{
+    This lecture covers: 
+    \begin{itemize}
+        \item 4.5 Linear Dependence and Linear Independence
+        \item 4.6 Basis and Dimension
+    \end{itemize}
+
+}
 
 \subsection{More properties of Linear Independence}
 
@@ -2800,8 +2808,130 @@ For each of the following subsets S of famous vector spaces V , find an immediat
 
 
 
-% \newpage
-\section{Lecture 16: Basis, Row and Columns Spaces}
+\newpage
+\section{Lecture 16: Row and Columns Spaces}
+
+\rmk{
+    This lecture covers: 
+    \begin{itemize}
+        \item 4.8 The Row Space and Column Space
+    \end{itemize}
+    I combine the basis part in the previous section and the rank nullity theorem to the next section.
+}
+
+\subsection{Colomn Space}
+\defn{Colomn Space}{
+    The \textbf{column space} of a matrix $A$ is the set of all linear combinations of the columns of $A$. It is denoted by $\text{Col}(A)$.
+}
+
+For matrix $A = M_{m \times n}$, the column space is a subspace of $\mathbb{R}^m$. This is because, for each column vector, we have $m$ elements.
+
+\ex{
+    Let $A = \begin{bmatrix}
+        1 & 0\\
+        0 & 1\\
+        1 & 1
+    \end{bmatrix}
+    $. Find the column space of $A$.\\
+    The column space is the span of the column vectors, that is:
+    \[
+        \text{Col}(A) = \text{span}\{(1,0,1), (0,1,1)\}
+    \]
+}
+
+\subsubsection{Basis of Column Space}
+\fact{
+    The basis of the column space of a matrix $A$ is the set of pivot columns of $A$.
+}
+\rmkb{
+
+
+    \begin{itemize}
+        \item     If A and E are row-equivalent, then the dependency relationships between the columns are exactly the same. So any set of independent columns in the reduced row-echelon form E of A will correspond to an independent set of columns in A.
+        \item     The column space of A will NOT necessarily equal the column space of E. They will both be subspaces of Rm of the same dimension.
+        \item     Technique: Find E, a row-echelon form for A. The columns of E with leading ones indicate which columns of A form a basis. That is, the columns of A corresponding to columns of E containing a leading 1 constitute a basis for the column space of A.
+    \end{itemize}
+}
+\newpage
+
+\ex{
+    1. Find Colomn Space:\\\\
+    Let $A = \begin{bmatrix}
+        1 & 2 & 3\\
+        4 & 5 & 6\\
+        7 & 8 & 9
+    \end{bmatrix}
+    $. Find a reduced row echelon form E for A. Determine a basis for the column space of
+    $A$.\\
+    RREF:
+    \[
+        \begin{bmatrix}
+            1 & 0 & -1\\
+            0 & 1 & 2\\
+            0 & 0 & 0
+        \end{bmatrix}   
+    \]
+    Notice that the pivot columns are the first two columns of A. Therefore, the basis for the column space of A is $\{(1,4,7), (2,5,8)\}$. \\\\
+    2. In E, write the third column as a linear combination of the first two columns: \\
+    3. Show that the same coefficients can be used to write the third column of A as a linear combination of the first two columns of A:
+
+    \[
+        \vec{c_3} = \lambda_1 \vec{c_1} + \lambda_2 \vec{c_2}
+    \]
+    \[
+        \begin{bmatrix}
+            1 & 2\\
+            4 & 5\\
+            7 & 8
+        \end{bmatrix}
+        \begin{bmatrix}
+            \lambda_1\\ \lambda_2
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+            3\\6\\9
+        \end{bmatrix}
+    \]
+    \[
+        \begin{bmatrix}
+            \begin{array}{cc|c}
+                1 & 2 & 3\\
+                4 & 5 & 6
+            \end{array}
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+            \begin{array}{cc|c}
+                1 & 0 & -1\\
+                0 & 1 & 2
+            \end{array}
+        \end{bmatrix}
+    \]
+    Therefore, $\vec{c_3} = -\vec{c_1} + 2\vec{c_2}$. We substitute $\vec{c_1}$ and $\vec{c_2}$ with the column vectors of $A$ to get:
+    \[
+        \boxed{\vec{c_3} = \begin{bmatrix}
+            3\\6\\9
+        \end{bmatrix}
+        =
+        - \begin{bmatrix}
+            1\\4\\7
+        \end{bmatrix}
+        +
+        2 \begin{bmatrix}
+            2\\5\\8
+        \end{bmatrix}  }
+    \]
+
+
+}
+
+
+\fact{
+    $\dim(\text{column space}(A) = \text{rank}(A)$
+}
+\pf{
+    The rank of a matrix is the number of pivot columns in its reduced row echelon form. The pivot columns form a basis for the column space of the matrix. Therefore, the dimension of the column space is the rank of the matrix.
+}
 
 
 
@@ -2812,80 +2942,179 @@ For each of the following subsets S of famous vector spaces V , find an immediat
 
 
 
+\newpage
+\subsection{Row Space}
+\defn{Row Space}{
+    The \textbf{row space} of a matrix $A$ is the set of all linear combinations of the rows of $A$. It is denoted by $\text{Row}(A)$.
+}
+\ex{
+    Let $A = \begin{bmatrix}
+        1 & 1 & 1 & 1 \\
+        1 & 1 & 0 & -1 \\
+        1 & 1 & 2 & 3
+    \end{bmatrix}$.
+
+    The RREF of A is:
+    \[
+        \begin{bmatrix}
+            1 & 1 & 0 & -1\\
+            0 & 0 & 1 & 2\\
+            0 & 0 & 0 & 0
+        \end{bmatrix}
+    \]
+    The pivot rows are the first and third rows of A. \\
+    The basis of the column space is $\{(1,1,1,0), (1,0,2,0)\}$.\\
+    Therefore, the basis of the row space is $\{(1,1,1,1), (0,0,1,2)\}$.
+}
+
+\rmkb{
+    Note that the dimension of row space and column space is the same. However, they are not the same space. 
+}
+
+\fact{
+    The row space of a matrix $A$ is the column space of the transpose of $A$.
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\newpage
 \section{Lecture 17: The Rank-Nullity Theorem}
+\rmk{
+    This lecture covers: 
+    \begin{itemize}
+        \item 4.9 The Rank-Nullity Theorem
+    \end{itemize}
+}
+
+
+
+\subsection{Rank-Nullity Theorem}
+\defn{Rank-Nullity Theorem}{
+    The \textbf{nullity} of a matrix $A$ is the dimension of the null space of $A$: \\
+    \[
+        \text{nullity}(A) = \dim(\text{null space}(A))
+    \]
+}
+
+\fact{
+    The rank of a matrix $A$ plus the nullity of $A$ equals the number of columns of $A$:
+    \[
+        \text{rank}(A) + \text{nullity}(A) = n
+    \]
+}
+
+\ex{
+    Find the nullity of: \\
+    \[
+        A = \begin{bmatrix}
+            1 & 2 & 3 & 4\\
+            0 & 1 & 2 & 3\\
+            1 & 3 & 5 & 7
+        \end{bmatrix}
+    \]
+
+    The RREF of A is:
+    \[
+        \begin{bmatrix}
+            1 & 0 & -1 & -2\\
+            0 & 1 & 2 & 3\\
+            0 & 0 & 0 & 0
+        \end{bmatrix}
+    \]
+    The null space of A is the set of all solutions to $A\vec{x} = \vec{0}$. The null space is spanned by the free variables, which are the third and fourth columns of the RREF. Therefore, the null space is spanned by $\{(1,-2,1,0), (2,-3,0,1)\}$. The nullity of A is 2.
+
+    The rank of A is 2. Therefore, the rank-nullity theorem holds:
+    \[
+        \boxed{2 + 2 = 4}
+    \]
+}
+
+\rmkb{
+    \[
+        \dim(\text{null}(A)) + \text{one of} \begin{Bmatrix}
+            \text{rank}(A)\\
+            \dim(\text{colspace}(A))\\
+            \dim(\text{rowspace}(A))
+        \end{Bmatrix}
+        = n (\text{the number of columns of A})
+    \]
+}
+
+
+\ex{
+    Show that a $3 \times 7$ matrix whose nullity is 4 must have a column space that is $\mathbb{R}^3$. What can we say about its rowspace?\\\\
+    The rank-nullity theorem states that the rank of a matrix plus its nullity equals the number of columns of the matrix. Therefore, the rank of the matrix is $7 - 4 = 3$. Since the rank of the matrix is 3, the column space of the matrix is $\mathbb{R}^3$. The rowspace of the matrix is also $\mathbb{R}^3$ because the rowspace is the column space of the transpose of the matrix.
+
+}
+
+\ex{
+    True or False? An $m\times× n$ matrix must have a nullity that is at least $\mid m - n \mid$.\\\\
+    % According to the rank nullity theorem, the nullity = number of columns $-$ rank. The statement can be translated to "The rank of the matrix must be at least $\min(m,n)$". However, rank is the number of pivot columns in the RREF of the matrix. The matrix we mentioned does not necessarily have to have a rank of $\min(m,n)$. So rank can be less than $\min(m,n)$. However, here we are looking for the least nullity, which is given by the max rank. The max rank is $\min(m,n)$. Therefore, the statement is \textbf{True}.
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 % ------------------------------------------------------------------------------
-% \newpage
-% \chapter{Office Hour Notes}
-% \section{3/28}
-% \subsection{Span and independent}
-% Span:
-% \ex{
-%     \[
-%         \begin{bmatrix}
-%             \begin{array}{ccc|c}
-%                 1 & 2 & 3 & x\\
-%                 4 & 5 & 6 & y\\
-%                 7 & 8 & 9 & z
-%             \end{array}
-%         \end{bmatrix}
-%     \]
-%     \textbf{Does it span $\mathbb{R}^3$?} \\
-%     REF:
-%     \[
-%         \begin{bmatrix}
-%             \begin{array}{ccc|c}
-%                 1 & 2 & 3 & x\\
-%             0 & -3 & -6 & y-4x\\
-%             0 & 0 & 0 & z+x-2y
-%             \end{array}
-%         \end{bmatrix}
-%     \]
-%     The augmented matrix only be consistent when $z+x-2y = 0$. Therefore, it does not span $\mathbb{R}^3$.\\
-%     However, it does span $S=\{x,y,z|z+x-2y = 0 \}$ which is a subspace of $\mathbb{R}^3$.
-% }
-% \\
-% Infinite dimensional matrix:
-% \ex{
-%     \[
-%         P(\mathbb{R}) = \text{all polynomials}
-%     \] 
-%     \[
-%         \beta = \{1, x, x^2, x^3, \cdots \}
-%     \]
-% }
+\newpage
+\chapter{Office Hour Notes}
+\section{3/28}
+\subsection{Span and independent}
+Span:
+\ex{
+    \[
+        \begin{bmatrix}
+            \begin{array}{ccc|c}
+                1 & 2 & 3 & x\\
+                4 & 5 & 6 & y\\
+                7 & 8 & 9 & z
+            \end{array}
+        \end{bmatrix}
+    \]
+    \textbf{Does it span $\mathbb{R}^3$?} \\
+    REF:
+    \[
+        \begin{bmatrix}
+            \begin{array}{ccc|c}
+                1 & 2 & 3 & x\\
+            0 & -3 & -6 & y-4x\\
+            0 & 0 & 0 & z+x-2y
+            \end{array}
+        \end{bmatrix}
+    \]
+    The augmented matrix only be consistent when $z+x-2y = 0$. Therefore, it does not span $\mathbb{R}^3$.\\
+    However, it does span $S=\{x,y,z|z+x-2y = 0 \}$ which is a subspace of $\mathbb{R}^3$.
+}
+\\
+Infinite dimensional matrix:
+\ex{
+    \[
+        P(\mathbb{R}) = \text{all polynomials}
+    \] 
+    \[
+        \beta = \{1, x, x^2, x^3, \cdots \}
+    \]
+}
 
 
 
