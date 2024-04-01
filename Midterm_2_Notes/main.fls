@@ -1,8 +1,8 @@
-PWD /home/hoover/u15/ypan36/Math165/studyGroup_3_25
+PWD /home/hoover/u15/ypan36/Math165/Midterm_2_Notes
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /u/ypan36/Math165/studyGroup_3_25/main.tex
+INPUT /u/ypan36/Math165/Midterm_2_Notes/main.tex
 OUTPUT main.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/book.cls
