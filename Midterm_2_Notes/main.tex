@@ -874,7 +874,7 @@ Relationship between the determinant, rank, and number of solutions of a system 
             3x_1 + 6x_2 + x_3 & = & 0
         \end{matrix}
     \]
-    Approach 1: Use detrerminant:\\
+    Approach 1: Use determinant:\\
     Let
     \[
         \begin{vmatrix}
@@ -883,7 +883,7 @@ Relationship between the determinant, rank, and number of solutions of a system 
             3 & 6 & 1
         \end{vmatrix} = 0
     \]\\
-    If $\det(A) \neq 0 $ the rank $\neq n$. Because the system is homogeneous $(Ax=0)$, we don't need to worry about consistency (It is always consistent), therefore, the system has an infinite number of solutions. \\
+    If $\det(A) \neq 0 $ the rank $= n$. Because the system is homogeneous $(Ax=0)$, we don't need to worry about consistency (It is always consistent), therefore, the system has an infinite number of solutions. \\
     \[
         \det(A) = 1 \begin{vmatrix}
             -k & 1\\
@@ -927,7 +927,7 @@ Relationship between the determinant, rank, and number of solutions of a system 
             \end{array}
         \end{bmatrix}
     \]
-    We can notice that if $1-3k = 0$, the matrix will have at most 2 pivots since the rank is 0. \\
+    We can notice that if $1-3k = 0$, the matrix will have at most 2 pivots since the determinant is 0. \\
     if $-4-k = 0$, $k = -4$, we can clear the second row to get the third row. Therefore, the system has an infinite number of solutions:\\ 
     \[
         \begin{bmatrix}
@@ -1819,8 +1819,7 @@ This is very useful when dealing with null space.
 
 \rmkb{
     When we have a solution for a homogeneous equation, it turns out to be a spanning set. \\
-    We also use a spanning set for dimension.\\
-    The span is linearly independent.
+    We also use a spanning set for dimension.
 }
 
 \newpage
@@ -3044,6 +3043,7 @@ For matrix $A = M_{m \times n}$, the column space is a subspace of $\mathbb{R}^m
 \ex{
     True or False? An $m\times× n$ matrix must have a nullity that is at least $\mid m - n \mid$.\\\\
     % According to the rank nullity theorem, the nullity = number of columns $-$ rank. The statement can be translated to "The rank of the matrix must be at least $\min(m,n)$". However, rank is the number of pivot columns in the RREF of the matrix. The matrix we mentioned does not necessarily have to have a rank of $\min(m,n)$. So rank can be less than $\min(m,n)$. However, here we are looking for the least nullity, which is given by the max rank. The max rank is $\min(m,n)$. Therefore, the statement is \textbf{True}.
+    False: we do not add another column. 
 
 
 }
@@ -3110,7 +3110,5 @@ Infinite dimensional matrix:
         \beta = \{1, x, x^2, x^3, \cdots \}
     \]
 }
-
-
 
 \end{document}
