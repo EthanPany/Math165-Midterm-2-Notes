@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1712032988.51014 "/u/ypan36/Math165/Midterm_2_Notes/main.tex" "main.pdf" "main" 1712032993.20379 0
-  "/u/ypan36/Math165/Midterm_2_Notes/main.tex" 1712032988.57272 93393 5645fd304d279aaaae3c4c84bb07b547 ""
+["pdflatex"] 1714931127.58558 "/u/ypan36/Math165/Midterm_2_Notes/main.tex" "main.pdf" "main" 1714931132.30566 0
+  "/u/ypan36/Math165/Midterm_2_Notes/main.tex" 1714931122.45275 93388 741083c689ee1907404e1c224a01f769 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -203,9 +203,9 @@
   "commands.tex" 1711395272.63752 39 4441177d9bb7b869a8d1fec2256bd52e ""
   "img/Snipaste_2024-03-27_13-52-06.png" 1711561983.69308 175887 d983d70edcd43fa1482059aed3867a99 ""
   "img/Snipaste_2024-03-27_22-33-20.png" 1711593210.09974 101380 4c5921088d91ed9f942f3a3c8c91926d ""
-  "main.aux" 1712032992.99274 9792 bbf44b1d3151e2f8e4d5643fedce8a37 "pdflatex"
-  "main.out" 1712032992.99574 8901 236e0dc51017f3852ffa3d51d3ccaa69 "pdflatex"
-  "main.toc" 1712032992.99774 5808 d84127625e12f3591ff5c1be5559ebae "pdflatex"
+  "main.aux" 1714931132.09079 9792 bbf44b1d3151e2f8e4d5643fedce8a37 "pdflatex"
+  "main.out" 1714931132.09279 8901 236e0dc51017f3852ffa3d51d3ccaa69 "pdflatex"
+  "main.toc" 1714931132.09479 5808 d84127625e12f3591ff5c1be5559ebae "pdflatex"
   "theorems.tex" 1711395272.51352 6337 a1c81daa226fe1f11567dbeb9bb5f3b7 ""
   (generated)
   "main.aux"
